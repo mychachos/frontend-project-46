@@ -1,4 +1,4 @@
-import { readFileSync } from 'fs';
+import fs from 'fs';
 import path from 'path';
 import _ from 'lodash';
 
@@ -28,7 +28,7 @@ const giffTrees = (data1, data2) => {
    });
    return `{\n${result.join('\n')}\n}`;
 };
-const getExtension = (file) => (path.extname(file));
+const getExtension = (file) => path.extname(file);
 const parser = (file, extension) => {
    if (extension === '.json')
       return JSON.parse(file);
@@ -38,9 +38,8 @@ const parser = (file, extension) => {
 export default (file1, file2) => {
    const way1 = path.resolve(process.cwd(), file1);
    const way2 = path.resolve(process.cwd(), file2);
-   
-   const data1 = parser(readFileSync(way1, 'utf-8'), getExtension(file1));
-   const data2 = parser(readFileSync(way2, 'utf-8'), getExtension(file2));
+   const data1 = parser(fs.readFileSync(way1, 'utf-8'), getExtension(file1));
+   const data2 = parser(fs.readFileSync(way2, 'utf-8'), getExtension(file2));
 
    return giffTrees(data1, data2);
 };
