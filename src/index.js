@@ -30,16 +30,13 @@ const giffTrees = (data1, data2) => {
 };
 const getExtension = (file) => path.extname(file);
 const parser = (file, extension) => {
-   if (extension === '.json')
-      return JSON.parse(file);
+   if (extension === '.json') return JSON.parse(file);
 };
-
 
 export default (file1, file2) => {
    const way1 = path.resolve(process.cwd(), file1);
    const way2 = path.resolve(process.cwd(), file2);
    const data1 = parser(fs.readFileSync(way1, 'utf-8'), getExtension(file1));
    const data2 = parser(fs.readFileSync(way2, 'utf-8'), getExtension(file2));
-
    return giffTrees(data1, data2);
 };
