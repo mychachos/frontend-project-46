@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">22.22% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>6/27</span>
+                <span class='fraction'>27/27</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">94.44% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/18</span>
+                <span class='fraction'>17/18</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">20% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">24% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>6/25</span>
+                <span class='fraction'>25/25</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -114,87 +114,87 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import fs from 'fs';
 import path from 'path';
 import _ from 'lodash';
 import process from 'node:process';
 &nbsp;
 &nbsp;
-const giffTrees = <span class="fstat-no" title="function not covered" >(d</span>ata1, data2) =&gt; {
-   const result = <span class="cstat-no" title="statement not covered" >[];</span>
-   const keys = <span class="cstat-no" title="statement not covered" >_.sortBy(_.union(Object.keys(data1), Object.keys(data2)));</span>
-<span class="cstat-no" title="statement not covered" >   keys.map(<span class="fstat-no" title="function not covered" >(k</span>ey) =&gt; {</span>
-      const value1 = <span class="cstat-no" title="statement not covered" >data1[key];</span>
-      const value2 = <span class="cstat-no" title="statement not covered" >data2[key];</span>
+const giffTrees = (data1, data2) =&gt; {
+   const result = [];
+   const keys = _.sortBy(_.union(Object.keys(data1), Object.keys(data2)));
+   keys.map((key) =&gt; {
+      const value1 = data1[key];
+      const value2 = data2[key];
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      if (_.has(data1, key) &amp;&amp; !_.has(data2, key)) {</span>
-<span class="cstat-no" title="statement not covered" >         result.push(` - ${key}: ${value1}`);</span>
+      if (_.has(data1, key) &amp;&amp; !_.has(data2, key)) {
+         result.push(` - ${key}: ${value1}`);
       }
-<span class="cstat-no" title="statement not covered" >      if (!_.has(data1, key) &amp;&amp; _.has(data2, key)) {</span>
-<span class="cstat-no" title="statement not covered" >         result.push(` + ${key}: ${value2}`);</span>
+      if (!_.has(data1, key) &amp;&amp; _.has(data2, key)) {
+         result.push(` + ${key}: ${value2}`);
       }
-<span class="cstat-no" title="statement not covered" >      if (_.has(data1, key) &amp;&amp; _.has(data2, key)) {</span>
-<span class="cstat-no" title="statement not covered" >         if (value1 === value2) {</span>
-<span class="cstat-no" title="statement not covered" >            result.push(`   ${key}: ${value1}`);</span>
+      if (_.has(data1, key) &amp;&amp; _.has(data2, key)) {
+         if (value1 === value2) {
+            result.push(`   ${key}: ${value1}`);
          }
-<span class="cstat-no" title="statement not covered" >         if (value1 !== value2) {</span>
-<span class="cstat-no" title="statement not covered" >            result.push(` - ${key}: ${value1}`);</span>
-<span class="cstat-no" title="statement not covered" >            result.push(` + ${key}: ${value2}`);</span>
+         if (value1 !== value2) {
+            result.push(` - ${key}: ${value1}`);
+            result.push(` + ${key}: ${value2}`);
          }
       }
    });
-<span class="cstat-no" title="statement not covered" >   return `{\n${result.join('\n')}\n}`;</span>
+   return `{\n${result.join('\n')}\n}`;
 };
 &nbsp;
-const getExtension = <span class="fstat-no" title="function not covered" >(f</span>ile) =&gt; <span class="cstat-no" title="statement not covered" >path.extname(file);</span>
+const getExtension = (file) =&gt; path.extname(file);
 &nbsp;
-const parser = <span class="fstat-no" title="function not covered" >(f</span>ile, extension) =&gt; {
-<span class="cstat-no" title="statement not covered" >   if (extension === '.json') <span class="cstat-no" title="statement not covered" >return JSON.parse(file);</span></span>
+const parser = (file, extension) =&gt; {
+   <span class="missing-if-branch" title="else path not taken" >E</span>if (extension === '.json') return JSON.parse(file);
 };
 &nbsp;
 export default (file1, file2) =&gt; {
    const way1 = path.resolve(process.cwd(), file1);
    const way2 = path.resolve(process.cwd(), file2);
    const data1 = parser(fs.readFileSync(way1, 'utf-8'), getExtension(file1));
-   const data2 = <span class="cstat-no" title="statement not covered" >parser(fs.readFileSync(way2, 'utf-8'), getExtension(file2));</span>
-<span class="cstat-no" title="statement not covered" >   return giffTrees(data1, data2);</span>
+   const data2 = parser(fs.readFileSync(way2, 'utf-8'), getExtension(file2));
+   return giffTrees(data1, data2);
 };</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -202,7 +202,7 @@ export default (file1, file2) =&gt; {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-07-24T14:42:27.904Z
+                at 2023-07-24T16:19:52.596Z
             </div>
         <script src="prettify.js"></script>
         <script>
