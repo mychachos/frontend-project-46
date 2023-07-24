@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import _ from 'lodash';
+import process from 'node:process';
 
 
 const giffTrees = (data1, data2) => {
@@ -28,7 +29,9 @@ const giffTrees = (data1, data2) => {
    });
    return `{\n${result.join('\n')}\n}`;
 };
+
 const getExtension = (file) => path.extname(file);
+
 const parser = (file, extension) => {
    if (extension === '.json') return JSON.parse(file);
 };
